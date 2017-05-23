@@ -1,5 +1,6 @@
 <div>
-	<p>Name : {{userInformation.login}}</p>
+	{{error}}
+	<p>Name : {{userInformation.login | uppercase}}</p>
 	<p>Location : {{userInformation.location}}</p>
 	<p>
 		Github URL : <a href="{{userInformation.html_url}}" target="_blank">{{userInformation.html_url}}</a>
@@ -32,3 +33,4 @@
 		</tr>
 	</tbody>
 </table>
+<a href="#/main.jsp">Go to search page</a>
