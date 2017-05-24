@@ -15,9 +15,18 @@
 						return response.data;
 					});
 		};
+		var getRepoDetails = function(userName, repoName) {
+			var repo;
+			var repoUrl = "https://api.github.com/repos/"+userName+"/"+repoName;
+			return $http.get(repoUrl).then(function(response){
+				repo = response.data;
+				return repo;
+			});
+		};
 		return {
 			getUser : getUser,
-			getRepos : getRepos
+			getRepos : getRepos,
+			getRepoDetails : getRepoDetails
 		};
 	};
 	var module = angular.module("gitHubViewer");

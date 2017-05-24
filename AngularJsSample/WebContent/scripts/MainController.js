@@ -20,7 +20,7 @@
 				$interval.cancel(countDownInterval);
 				$scope.countdown = null;
 			}
-			$location.path("/user/"+username);
+			$location.path("/user/" + username);
 		};
 		$scope.username = "sukanth";
 		$scope.countdown = 10;

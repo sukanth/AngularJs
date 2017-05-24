@@ -9,6 +9,7 @@
 <script src="scripts/app.js"></script>
 <script src="scripts/MainController.js"></script>
 <script src="scripts/UserController.js"></script>
+<script src="scripts/RepoController.js"></script>
 <script src="scripts/github.js"></script>
 </head>
 <body>
